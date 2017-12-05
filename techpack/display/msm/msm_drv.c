@@ -63,12 +63,13 @@
 #define MSM_VERSION_MINOR	3
 #define MSM_VERSION_PATCHLEVEL	0
 
+#define IDLE_ENCODER_MASK_DEFAULT	1
+#define IDLE_TIMEOUT_MS_DEFAULT		100
+
 static DEFINE_MUTEX(msm_release_lock);
 
-#if IS_ENABLED(CONFIG_MI_DRM_OPT)
 atomic_t resume_pending;
 wait_queue_head_t resume_wait_q;
-#endif
 
 #define IDLE_ENCODER_MASK_DEFAULT	1
 #define IDLE_TIMEOUT_MS_DEFAULT		100
