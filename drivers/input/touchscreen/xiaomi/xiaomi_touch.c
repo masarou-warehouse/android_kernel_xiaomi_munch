@@ -571,6 +571,12 @@ static DEVICE_ATTR(set_update, (S_IRUGO | S_IWUSR | S_IWGRP),
 static DEVICE_ATTR(bump_sample_rate, (S_IRUGO | S_IWUSR | S_IWGRP),
 		   bump_sample_rate_start, bump_sample_rate_store);
 
+static DEVICE_ATTR(set_update, (S_IRUGO | S_IWUSR | S_IWGRP),
+		   set_update_show, set_update_store);
+
+static DEVICE_ATTR(bump_sample_rate, (S_IRUGO | S_IWUSR | S_IWGRP),
+		   bump_sample_rate_start, bump_sample_rate_store);
+
 static DEVICE_ATTR(log_debug, (S_IRUGO | S_IWUSR | S_IWGRP),
 		   xiaomi_touch_log_debug_show, xiaomi_touch_log_debug_store);
 #if XIAOMI_ROI
