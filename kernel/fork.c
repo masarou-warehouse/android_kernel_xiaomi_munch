@@ -98,7 +98,6 @@
 #if IS_ENABLED(CONFIG_MIHW)
 #include <linux/cpuset.h>
 #endif
-#include <linux/simple_lmk.h>
 #include <linux/devfreq_boost.h>
 
 #include <asm/pgtable.h>
