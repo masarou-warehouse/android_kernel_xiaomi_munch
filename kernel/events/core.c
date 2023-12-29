@@ -1947,14 +1947,10 @@ static void perf_group_detach(struct perf_event *event)
 	if (event->group_leader != event) {
 		list_del_init(&event->sibling_list);
 		event->group_leader->nr_siblings--;
-<<<<<<< HEAD
 
 		if (event->shared)
 			event->group_leader = event;
 
-=======
-		event->group_leader->group_generation++;
->>>>>>> ASB-2023-12-05_4.19-stable
 		goto out;
 	}
 
